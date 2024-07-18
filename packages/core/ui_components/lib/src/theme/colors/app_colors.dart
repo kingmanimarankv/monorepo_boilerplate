@@ -1,0 +1,3 @@
+class AppLightColors {}
+
+class AppDarkColors {}

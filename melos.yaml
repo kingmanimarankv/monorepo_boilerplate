@@ -1,0 +1,18 @@
+name: monorepo
+
+packages:
+  - app/
+  - packages/**
+
+scripts:
+  upgrade:
+    run: melos exec -- flutter pub upgrade .
+    description: Run `flutter pub upgrade` in all packages.
+
+  cache_clean:
+    run: melos exec -- flutter pub cache clean -f .
+    description: Run `flutter pub cache clean` in all packages.
+
+  remove_lock:
+    run: melos exec -- rm pubspec.lock
+    description: Remove all the pubspec.lock files.

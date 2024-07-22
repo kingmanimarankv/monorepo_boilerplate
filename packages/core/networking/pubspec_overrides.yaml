@@ -1,4 +1,24 @@
-# melos_managed_dependency_overrides: common
+# melos_managed_dependency_overrides: common,analytics,crashlytics,deeplinks,dependencies,dependency_injection,key_value_storage,notifications,secure_storage,ui_components,utils
 dependency_overrides:
+  analytics:
+    path: ..\\..\\analytics
   common:
     path: ..\\common
+  crashlytics:
+    path: ..\\..\\crashlytics
+  deeplinks:
+    path: ..\\..\\deeplinks
+  dependencies:
+    path: ..\\dependencies
+  dependency_injection:
+    path: ..\\dependency_injection
+  key_value_storage:
+    path: ..\\key_value_storage
+  notifications:
+    path: ..\\..\\notifications
+  secure_storage:
+    path: ..\\secure_storage
+  ui_components:
+    path: ..\\ui_components
+  utils:
+    path: ..\\..\\utils

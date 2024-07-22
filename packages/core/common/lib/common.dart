@@ -10,3 +10,10 @@ export 'src/mappers/base_cache_to_entity_mapper.dart';
 export 'src/mappers/base_cache_to_response_mapper.dart';
 export 'src/mappers/base_response_to_cache_mapper.dart';
 export 'src/mappers/base_response_to_entity_mapper.dart';
+
+// Helpers
+export 'src/helpers/logging_helper.dart';
+export 'src/helpers/permissions_helper.dart';
+
+// Aliases
+export 'src/aliases/aliases.dart';

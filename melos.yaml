@@ -1,10 +1,17 @@
 name: monorepo
 
 packages:
-  - app/
+  - apps/**
   - packages/**
 
 scripts:
+  build_runner:
+    run: dart run build_runner build --delete-conflicting-outputs
+    exec:
+      concurrency: 1
+    select-package:
+      depends-on: build_runner
+
   upgrade:
     run: melos exec -- flutter pub upgrade .
     description: Run `flutter pub upgrade` in all packages.
